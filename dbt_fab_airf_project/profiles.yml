@@ -1,0 +1,26 @@
+dbt_snow_project:
+  outputs:
+    dev:
+      account: RWZVIOV-PS64328
+      database: SLEEKMART_OMS
+      password: T@sh9696intel@
+      role: ACCOUNTADMIN
+      schema: L1_LANDING
+      threads: 1
+      type: snowflake
+      user: EDALYKAREPRO
+      warehouse: COMPUTE_WH
+  target: dev
+
+dbt_fab_airf_project:
+  target: dev
+  outputs:
+    dev:
+      type: fabric
+      driver: 'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
+      server: nd3i7xr4636ebi6tgmcfoy22em-6eaqfrgz3kru5bj6lug7otzszy.datawarehouse.fabric.microsoft.com
+      database: wrh_test_dbt
+      schema: dbo
+      authentication: ActiveDirectoryInteractive
+      threads: 4
+      user: mohamed.kare@francetvpub.fr
