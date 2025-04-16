@@ -135,6 +135,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+dbt_fab_airf_env/
 
 # Spyder project settings
 .spyderproject
